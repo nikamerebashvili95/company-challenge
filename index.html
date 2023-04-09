@@ -14,7 +14,7 @@
   <body>
     <header id="home">
       <!-- navbar -->
-      <nav id="nav">
+      <nav id="nav" class="fixed-nav">
         <div class="nav-center">
           <!-- nav header -->
           <div class="nav-header">
@@ -33,7 +33,7 @@
               <i class="fas fa-bars"></i>
             </button>
           </div>
-          <div class="nav-search">
+          <div class="nav-search search-nav">
             <input
               class="header-search-inp"
               type="text"
@@ -63,6 +63,18 @@
                 <a href="#contact" class="scroll-link">contact</a>
               </li>
             </ul>
+          </div>
+          <div class="nav-search search-hidden">
+            <input
+              class="header-search-inp"
+              type="text"
+              placeholder="Serach keyword ..."
+            />
+            <img
+              class="search-icon"
+              src="assets/images/search-icon.png"
+              alt="search"
+            />
           </div>
         </div>
       </nav>
@@ -98,15 +110,15 @@
         <h2>services</h2>
       </div>
       <div class="services-container">
-        <div class="box box--2">
+        <div class="box box--1">
           <img src="assets/images/service-img-1.png" alt="services" />
           <h3>Service Name</h3>
         </div>
-        <div class="box box--3">
+        <div class="box box--2">
           <img src="assets/images/service-img-2.png" alt="services" />
           <h3>Service Name</h3>
         </div>
-        <div class="box">
+        <div class="box box--3">
           <img src="assets/images/service-img-3.png" alt="services" />
           <h3>Service Name</h3>
         </div>
@@ -156,37 +168,57 @@
       </div>
     </section>
     <footer id="contact">
-      <div class="footer-container">
-        <div class="footer-left">
-          <div>
-            <div class="logo-container">
-              <img
-                class="footer-logo"
-                src="assets/images/logo/footer-logo.png"
-                alt="logo"
-              />
-              <h2 class="footer-title">
-                <span>company</span>
-                <span>name</span>
-              </h2>
+      <div class="footer">
+        <div class="footer-container">
+          <div class="footer-left">
+            <div>
+              <div class="logo-container">
+                <img
+                  class="footer-logo"
+                  src="assets/images/logo/footer-logo.png"
+                  alt="logo"
+                />
+                <h2 class="footer-title">
+                  <span>company</span>
+                  <span>name</span>
+                </h2>
+              </div>
+            </div>
+            <div>
+              <span class="footer-info">© 2023 All Rights Reserved</span>
             </div>
           </div>
-          <div>
-            <span class="footer-info">© 2023 All Rights Reserved</span>
+          <div class="footer-about-container">
+            <div class="footer-about">
+              <div class="footer-link-first">
+                <a class="footer-links" href="#">Services</a>
+                <a class="footer-links" href="#">Projects</a>
+              </div>
+              <div class="footer-link-second">
+                <a class="footer-links" href="#">About</a>
+                <a class="footer-links" href="#">Contact</a>
+              </div>
+            </div>
+            <div class="social-icons">
+              <img src="assets/images/Group-1084.png" alt="fb" />
+            </div>
           </div>
         </div>
-        <div class="footer-about">
-          <div class="footer-link-first">
-            <a class="footer-links" href="#">Services</a>
-            <a class="footer-links" href="#">Projects</a>
+        <div class="contact-container">
+          <div class="inputs">
+            <input class="name" type="text" placeholder="Name" />
+            <input class="email" type="text" placeholder="Email" />
           </div>
-          <div class="footer-link-second">
-            <a class="footer-links" href="#">About</a>
-            <a class="footer-links" href="#">Contact</a>
+          <div class="textarea-containter">
+            <textarea
+              name="text"
+              class="textarea"
+              placeholder="Text"
+            ></textarea>
+            <div>
+              <button class="footer-btn">Send</button>
+            </div>
           </div>
-        </div>
-        <div class="social-icons">
-          <img src="assets/images/Group-1084.png" alt="fb" />
         </div>
       </div>
     </footer>

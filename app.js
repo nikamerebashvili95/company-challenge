@@ -4,8 +4,6 @@ const linksContainer = document.querySelector(".links-container");
 const links = document.querySelector(".links");
 
 navToggle.addEventListener("click", function () {
-  // linksContainer.classList.toggle("show-links");
-
   const linksHeight = links.getBoundingClientRect().height;
   const containerHeight = linksContainer.getBoundingClientRect().height;
   if (containerHeight === 0) {
@@ -13,7 +11,6 @@ navToggle.addEventListener("click", function () {
   } else {
     linksContainer.style.height = 0;
   }
-  // console.log(linksContainer.getBoundingClientRect());
 });
 // ********** fixed navbar ************
 
@@ -48,7 +45,7 @@ scrollLinks.forEach((link) => {
     if (!fixedNav) {
       position = position - navHeight;
     }
-    if (navHeight > 82) {
+    if (navHeight > 78) {
       position = position + containerHeight;
     }
 
