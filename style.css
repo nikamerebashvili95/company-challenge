@@ -182,9 +182,6 @@ h1 {
   line-height: 160%;
   color: #ffffff;
 }
-/* #services {
-  margin-top: 84px;
-} */
 .services-title {
   margin-top: 84px;
 }
@@ -315,10 +312,6 @@ h1 {
   color: #ffffff;
   opacity: 0.7;
 }
-/* .footer-about-container {
-  display: flex;
-  gap: 15px;
-} */
 .footer-about {
   display: flex;
   flex-direction: column;
@@ -342,11 +335,6 @@ h1 {
   width: 50px;
   height: 50px;
 }
-/* .bi-instagram,
-.bi-facebook {
-  width: 20px;
-  color: #ffffff;
-} */
 .inputs {
   margin-top: 20px;
   display: flex;
@@ -421,6 +409,88 @@ h1 {
   right: 50px;
   transform: translate(50%, 50%);
 }
+.projects-container {
+  background: #f8f8fa;
+  margin-top: 100px;
+  padding-top: 87px;
+  padding-bottom: 155px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 87px;
+}
+.arrows {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.arrow {
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  opacity: 0.2;
+}
+.arrow:hover {
+  opacity: 1;
+}
+.news-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.images-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: hidden;
+  padding: 10px;
+}
+.image-wrapper {
+  position: relative;
+  min-width: 337px;
+  height: 100%;
+}
+.news-image {
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  background: linear-gradient(
+    205.96deg,
+    rgba(67, 26, 26, 0) -7.14%,
+    #431a1a 121.86%
+  );
+}
+.overlay-content {
+  position: absolute;
+  bottom: 10%;
+  left: 10px;
+}
+.overlay-content h4 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 35px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.overlay-content span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  opacity: 0.8;
+}
 @media screen and (min-width: 590px) {
   .background-img {
     max-width: 570px;
@@ -430,9 +500,9 @@ h1 {
   }
 }
 @media screen and (min-width: 689px) {
-  nav {
+  /* nav {
     padding: 20px 32px;
-  }
+  } */
   .banner {
     padding-left: 50px;
   }
@@ -570,6 +640,9 @@ h1 {
   .nav-header {
     padding: 0;
   }
+  .banner {
+    margin-top: -50px;
+  }
 }
 @media screen and (min-width: 1420px) {
   .services-container {
@@ -588,9 +661,9 @@ h1 {
   }
 }
 @media screen and (min-width: 1900px) {
-  nav {
+  /* nav {
     padding: 16px 24px;
-  }
+  } */
   .services-container {
     padding: 0 250px;
   }
