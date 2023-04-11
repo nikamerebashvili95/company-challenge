@@ -57,3 +57,35 @@ scrollLinks.forEach((link) => {
     linksContainer.style.height = 0;
   });
 });
+///////////////////////////////////////////////////////////////////////////////////////////////////
+const slidereffect = document.querySelectorAll(".news-img");
+const leftslide = document.getElementById("left");
+const rightslide = document.getElementById("right");
+
+const savedImg = [
+  "./assets/images/slider/img-1.png",
+  "./assets/images/slider/img-2.png",
+  "./assets/images/slider/img-3.png",
+  "./assets/images/slider/img-4.png",
+];
+
+let starter = 1;
+
+function slideright(rightslide) {
+  starter += 1;
+  for (let i = 0; i < slidereffect.length; i++) {
+    slidereffect[i].src = savedImg[(starter + i) % savedImg.length];
+  }
+}
+
+function slideleft(leftslide) {
+  starter -= 1;
+  if (starter < 0) {
+    starter = savedImg.length - 1;
+  }
+  for (let i = 0; i < slidereffect.length; i++) {
+    slidereffect[i].src = savedImg[(starter + i) % savedImg.length];
+  }
+}
+
+console.log(slidereffect);

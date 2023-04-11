@@ -131,7 +131,7 @@
             <h3 class="news-title">news</h3>
           </div>
           <div class="arrows">
-            <button class="arrow left">
+            <button class="arrow left" onclick="slideleft(this)">
               <svg
                 width="33"
                 height="16"
@@ -145,7 +145,7 @@
                 />
               </svg>
             </button>
-            <button class="arrow right">
+            <button class="arrow right" onclick="slideright(this)">
               <svg
                 width="33"
                 height="16"
@@ -163,7 +163,11 @@
         </div>
         <div class="images-container">
           <div class="image-wrapper">
-            <img class="news-img" src="assets/images/slider/img-1.png" alt="" />
+            <img
+              class="news-img"
+              src="assets/images/slider/img-1.png"
+              alt="news"
+            />
             <div class="overlay"></div>
             <div class="overlay-content">
               <h4>There are many variations of passages</h4>
@@ -184,9 +188,14 @@
                 </svg>
               </a>
             </div>
+            <div class="background"></div>
           </div>
-          <!-- <div class="image-wrapper">
-            <img class="news-img" src="assets/images/slider/img-2.png" alt="" />
+          <div class="image-wrapper">
+            <img
+              class="news-img img--2"
+              src="assets/images/slider/img-2.png"
+              alt="news"
+            />
             <div class="overlay"></div>
             <div class="overlay-content">
               <h4>The point of using Lorem Ipsum</h4>
@@ -207,7 +216,61 @@
                 </svg>
               </a>
             </div>
-          </div> -->
+          </div>
+          <div class="image-wrapper">
+            <img
+              class="news-img img--3"
+              src="assets/images/slider/img-3.png"
+              alt="news"
+            />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <h4>I must explain to you how all this mistaken idea</h4>
+              <span>19 April 2023</span>
+              <a href="#home" class="scroll-link btn btn-white"
+                ><span class="btn-text">See More</span
+                ><svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.6652 7.82364C16.1116 7.36808 16.1116 6.62827 15.6652 6.17272L9.95055 0.341663C9.5041 -0.113888 8.77906 -0.113888 8.33261 0.341663C7.88615 0.797215 7.88615 1.53703 8.33261 1.99258L12.1007 5.83379H1.14292C0.510743 5.83379 0 6.35494 0 7C0 7.64506 0.510743 8.16621 1.14292 8.16621H12.0971L8.33618 12.0074C7.88973 12.463 7.88973 13.2028 8.33618 13.6583C8.78263 14.1139 9.50767 14.1139 9.95413 13.6583L15.6687 7.82728L15.6652 7.82364Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="image-wrapper">
+            <img
+              class="news-img img--4"
+              src="assets/images/slider/img-4.png"
+              alt="news"
+            />
+            <div class="overlay"></div>
+            <div class="overlay-content">
+              <h4>On the other hand, we denounce with righteous indignation</h4>
+              <span>15 April 2023</span>
+              <a href="#home" class="scroll-link btn btn-white"
+                ><span class="btn-text">See More</span
+                ><svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.6652 7.82364C16.1116 7.36808 16.1116 6.62827 15.6652 6.17272L9.95055 0.341663C9.5041 -0.113888 8.77906 -0.113888 8.33261 0.341663C7.88615 0.797215 7.88615 1.53703 8.33261 1.99258L12.1007 5.83379H1.14292C0.510743 5.83379 0 6.35494 0 7C0 7.64506 0.510743 8.16621 1.14292 8.16621H12.0971L8.33618 12.0074C7.88973 12.463 7.88973 13.2028 8.33618 13.6583C8.78263 14.1139 9.50767 14.1139 9.95413 13.6583L15.6687 7.82728L15.6652 7.82364Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -236,7 +299,7 @@
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <a href=""
+          <a href="#"
             ><span>See More</span
             ><svg
               width="16"
