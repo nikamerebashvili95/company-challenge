@@ -427,7 +427,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  margin-bottom: 87px;
+  margin-bottom: 30px;
 }
 .arrows {
   display: flex;
@@ -660,6 +660,9 @@ h1 {
   }
   .banner {
     margin-top: -50px;
+  }
+  .header-container {
+  margin-bottom: 87px;
   }
 }
 @media screen and (min-width: 1420px) {
